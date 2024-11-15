@@ -1,0 +1,29 @@
+.. _0_prepartion:
+
+0 Prepartion
+==================
+
+首先我们先安装树莓派系统,可以参考这一章
+
+* :ref:`Installing_the_OS(Common)`
+
+
+按照图片链接线缆并安装sd卡
+
+.. image:: img/0/1.png
+   :width: 600
+   :alt: x.png
+
+如果您有备件显示器，请按照本节中的步骤操作。成功写入
+系统后，将SD卡放入RPI的SD卡插槽中。然后连接您的RPI通过HDMI电缆监视，通过USB端口连接鼠标
+和键盘,启动后稍后，设置后，您需要输入用户名和密码登录。如果你在安装系统的时候没设置过密码,
+默认的用户名：pi;密码：覆盆子。登录后，您应该看到以下屏幕。
+
+.. image:: img/0/1.png
+   :width: 600
+   :alt: x.png(树莓派主界面照片)
+
+如果你没有屏幕可以参考这一章的If You Have No Screen这一段启用VNC远程连接
+
+* :ref:`Set_up_Your_Raspberry_Pi`
+

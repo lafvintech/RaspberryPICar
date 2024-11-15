@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 1 Software installation and Test (necessary) &mdash; RaspberryPiSmartCar  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2 Input (for Pi 4)" href="2_assemble_smart_car.html" />
+    <link rel="prev" title="0 Prepartion" href="0_prepartion.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="component_list.html">Component List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparation/preparation.html">Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0_prepartion.html">0 Prepartion</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Chapter 1 Software installation and Test (necessary)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-obtain-the-code-and-set-python3-as-default">Step 1 Obtain the Code and Set python3 as Default</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#set-python3-as-default-python-necessary">Set Python3 as default python (Necessary)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-configuration">Step 2 Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-3-run-the-libraries-installation-program">Step 3 Run the Libraries Installation Program</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2_assemble_smart_car.html">2 Input (for Pi 4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_module_test.html">3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_light_tracking_car.html">4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_ultrasonic_obstacle_avoidance_car.html">5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_infrared_line_tracking_car.html">6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_smart_video_car.html">7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix/appendix.html">Appendix</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RaspberryPiSmartCar</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Chapter 1 Software installation and Test (necessary)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/1_software_install_and_test.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="chapter-1-software-installation-and-test-necessary">
+<h1>Chapter 1 Software installation and Test (necessary)<a class="headerlink" href="#chapter-1-software-installation-and-test-necessary" title="Link to this heading"></a></h1>
+<p>In this chapter, we will make some necessary preparation: start your Pi Raspberry and install some necessary libraries. Then test some parts. Batteries are needed when driving peripherals such as motors, servos, LEDs, etc.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>1, Please use Raspberry Pi OS with Desktop
+2, The installation of libraries takes much time. You can power Raspberry Pi with a power supply Cable.
+3, If you are using remote desktop to login Raspberry Pi, you need to use <a class="reference external" href="https://www.realvnc.com/en/connect/download/viewer/">VNC viewer</a></p>
+</div>
+<section id="step-1-obtain-the-code-and-set-python3-as-default">
+<h2>Step 1 Obtain the Code and Set python3 as Default<a class="headerlink" href="#step-1-obtain-the-code-and-set-python3-as-default" title="Link to this heading"></a></h2>
+<p>To download the code, you can power Raspberry Pi with a power supply cable or switch
+on S1 (Power Switch). Then open the Raspberry Pi and the terminal. You can open
+the terminal by clicking as shown below, or you can press “CTRL + ALT + T” on the desktop.</p>
+<a class="reference internal image-reference" href="_images/11.png"><img alt="1.png" src="_images/11.png" style="width: 600px;" /></a>
+<p>The terminal is shown below:</p>
+<a class="reference internal image-reference" href="_images/2.png"><img alt="2.png" src="_images/2.png" style="width: 600px;" /></a>
+<p>Open the terminal and type the following commands to obtain the car code. And the
+code will be placed in the directory “Pi”. (Note: Here are two commands. Please
+execute them in order.)</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/3.png"><img alt="3.png" src="_images/3.png" style="width: 600px;" /></a>
+<p>Downloading takes some time. Please wait with patience. You can also find and
+download the code by visiting our <a class="reference external" href="https://lafvintech.com/">official website</a>  or
+our <a class="reference external" href="https://github.com/lafvintech/RaspberrySmartCar">github repository</a> .
+Please note that this tutorial is based on python3. If you want to use python2,
+please download another version of the tutorial.</p>
+</section>
+<section id="set-python3-as-default-python-necessary">
+<h2>Set Python3 as default python (Necessary)<a class="headerlink" href="#set-python3-as-default-python-necessary" title="Link to this heading"></a></h2>
+<p>First, execute python to check the default python on your Raspberry Pi. Press Ctrl-Z to exit.</p>
+<a class="reference internal image-reference" href="img/1/x.png"><img alt="x.png" src="img/1/x.png" style="width: 600px;" /></a>
+<p>If it is python3, you can skip this section. If it is python2, you need execute
+the following commands to set default python to python3.</p>
+<ol class="arabic simple">
+<li><p>Enter directory /usr/bin</p></li>
+<li><p>Delete the original python link.</p></li>
+<li><p>Create new python links to python.</p></li>
+<li><p>Check python. Press Ctrl-Z to exit.</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/usr/bin
+sudo<span class="w"> </span>rm<span class="w"> </span>python
+sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>python3<span class="w"> </span>python
+python
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="img/1/x.png"><img alt="x.png" src="img/1/x.png" style="width: 600px;" /></a>
+<p>If you want to set python2 as default python in other projects, just repeat the
+commands above and change python3 to python2.</p>
+<p><strong>Shortcut Key</strong></p>
+<p>1. Now, we will introduce several shortcuts that are very useful and commonly used in terminal.
+up and down arrow keys. History commands can be quickly brought back by using up
+and down arrow keys, which are very useful when you need to reuse certain commands.
+When you need to type commands, pressing “↑” will go backwards through the history
+of typed commands, and pressing “↓” will go forwards through the history of typed command.</p>
+<p>2.Tab key. The Tab key can automatically complete the command/path you want to
+type. When there are multiple commands/paths conforming to the already typed letter,
+pressing Tab key once won’t have any result. And pressing Tab key again will list
+all the eligible options. This command/path will be completely typed as soon as
+you press the Tab key when there is only one eligible option.</p>
+<p>s shown below, under the ‘~’directory, enter the Documents directory with the
+“cd” command. After typing “cd D”, press Tab key, then there is no response.
+Press Tab key again, then all the files/folders that begin with “D” is listed.
+Continue to type the character “oc”, then press the Tab key, and then “Documents”
+is completely typed automatically.</p>
+<a class="reference internal image-reference" href="img/1/x.png"><img alt="x.png" src="img/1/x.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="img/1/x.png"><img alt="x.png" src="img/1/x.png" style="width: 600px;" /></a>
+</section>
+<section id="step-2-configuration">
+<h2>Step 2 Configuration<a class="headerlink" href="#step-2-configuration" title="Link to this heading"></a></h2>
+<p><strong>Enable I2C and VNC</strong>
+The I2C interface Raspberry Pi is disabled by default. You need to open it manually.</p>
+<a class="reference internal image-reference" href="img/1/x.png"><img alt="x.png" src="img/1/x.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="img/1/x.png"><img alt="x.png" src="img/1/x.png" style="width: 600px;" /></a>
+<p>Type a command to check whether the I2C module is enabled:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>lsmod<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>i2c
+</pre></div>
+</div>
+<p>If I2C module has been enabled, the following content will show up (the numbers
+showing in your device may be different):</p>
+<a class="reference internal image-reference" href="img/1/x.png"><img alt="x.png" src="img/1/x.png" style="width: 600px;" /></a>
+<p><strong>Install I2C-Tools</strong></p>
+<p>Type the command to install I2C-Tools.</p>
+<p><strong>Install python-smbus</strong></p>
+<p>Python-smbus is a module of the program Python, which contains some classes and
+methods to operate I2C. Type the following command to install python-smbus:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-smbus
+</pre></div>
+</div>
+<p>Communication test</p>
+<p>The smart car board has two chips, PCF8591 and PCA9685. Their I2C addresses are
+0X48 and 0X40 respectively. Command “i2cdetect –y 1” can detect whether the board
+is successfully connected to Raspberry Pi.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>i2cdetect<span class="w"> </span>-y<span class="w"> </span><span class="m">1</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="img/1/x.png"><img alt="x.png" src="img/1/x.png" style="width: 600px;" /></a>
+<p>If an I2C device is connected to your RPI, its I2C address will be displayed here.</p>
+<p><strong>Additional supplement</strong></p>
+<p>Raspbery Pi, other than 4B and 400, needs to disable the audio module, othewise
+the LED will not work properly.</p>
+<ol class="arabic simple">
+<li><p>Create a new snd-blacklist.conf and open it for editing</p></li>
+</ol>
+<p>sudo nano /etc/modprobe.d/snd-blacklist.conf</p>
+<p>Add following content: After adding the contents, you need to press Ctrl+O, Enter, Ctrl+Z.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>blacklist<span class="w"> </span>snd_bcm2835
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>We also need to edit config file.</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/config.txt
+</pre></div>
+</div>
+<p>Find the contents of the following two lines (with Ctrl + W you can search):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enable audio (loads snd_bcm2835)</span>
+<span class="nv">dtparam</span><span class="o">=</span><span class="nv">audio</span><span class="o">=</span>on
+</pre></div>
+</div>
+<p>Add # to comment out the second line. Press Ctrl+O, Enter, Ctrl+X</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enable audio (loads snd_bcm2835)</span>
+<span class="c1"># dtparam=audio=on</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="img/1/x.png"><img alt="x.png" src="img/1/x.png" style="width: 600px;" /></a>
+<p>It will take effect after restarting, and you can restart after executing the
+next section. If you want to restart the audio module, just restore the content
+modified in the above two steps.</p>
+</section>
+<section id="step-3-run-the-libraries-installation-program">
+<h2>Step 3 Run the Libraries Installation Program<a class="headerlink" href="#step-3-run-the-libraries-installation-program" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Execute following commands to enter directory of “[setup.py](<a class="reference external" href="http://setup.py/">http://setup.py/</a>)”.</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Freenove_4WD_Smart_Car_Kit_for_Raspberry_Pi/Code
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>Run setup.py</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>python<span class="w"> </span>setup.py
+</pre></div>
+</div>
+<p>This program will automatically install the pca9685, rpi_ws281x, PyQt5 library,
+etc. Please reboot the Raspberry Pi after the installation is completed, as shown
+below.</p>
+<a class="reference internal image-reference" href="img/1/x.png"><img alt="x.png" src="img/1/x.png" style="width: 600px;" /></a>
+<p>If the installation fails, please rerun setup.py. After the installation is completed,
+restart the Raspberry Pi. Most installation failures are caused by network reasons.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>python<span class="w"> </span>setup.py
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="0_prepartion.html" class="btn btn-neutral float-left" title="0 Prepartion" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="2_assemble_smart_car.html" class="btn btn-neutral float-right" title="2 Input (for Pi 4)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, LAFVIN.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

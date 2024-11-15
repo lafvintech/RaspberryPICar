@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPI Configuration &mdash; RaspberryPiSmartCar  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Remote Desktop" href="remote_desktop.html" />
+    <link rel="prev" title="I2C Configuration" href="i2c_configuration.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../component_list.html">Component List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preparation/preparation.html">Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_prepartion.html">0 Prepartion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_software_install_and_test.html">Chapter 1 Software installation and Test (necessary)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_assemble_smart_car.html">2 Input (for Pi 4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_module_test.html">3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_light_tracking_car.html">4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_ultrasonic_obstacle_avoidance_car.html">5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../6_infrared_line_tracking_car.html">6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../7_smart_video_car.html">7</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="appendix.html">Appendix</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="i2c_configuration.html">I2C Configuration</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">SPI Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remote_desktop.html">Remote Desktop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_ip.html">Get the IP address</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RaspberryPiSmartCar</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="appendix.html">Appendix</a></li>
+      <li class="breadcrumb-item active">SPI Configuration</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/appendix/spi_configuration.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="spi-configuration">
+<h1>SPI Configuration<a class="headerlink" href="#spi-configuration" title="Link to this heading"></a></h1>
+<p><strong>Step 1</strong>: Enable the SPI port of your Raspberry Pi (If you have enabled it, skip this; if you do not know whether you have done that or not, please continue).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">raspi</span><span class="o">-</span><span class="n">config</span>
+</pre></div>
+</div>
+<p><strong>3 Interfacing options</strong></p>
+<p><img alt="" src="../_images/image282.png" /></p>
+<p><strong>P4 SPI</strong></p>
+<p><img alt="" src="../_images/image285.png" /></p>
+<p><strong><YES></strong>, then click <strong><OK></strong> and <strong><Finish></strong>. Now you can use the <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">reboot</span></code> command to reboot the Raspberry Pi.</p>
+<p><img alt="" src="../_images/image286.png" /></p>
+<p><strong>Step 2:</strong> Check that the spi modules are loaded and active.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sp</span><span class="o">*</span>
+</pre></div>
+</div>
+<p>Then the following codes will appear (the number may be different).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">spidev0</span><span class="mf">.0</span>  <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">spidev0</span><span class="mf">.1</span>
+</pre></div>
+</div>
+<p><strong>Step 3:</strong> Install Python module SPI-Py.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">lthiery</span><span class="o">/</span><span class="n">SPI</span><span class="o">-</span><span class="n">Py</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="n">SPI</span><span class="o">-</span><span class="n">Py</span>
+<span class="n">sudo</span> <span class="n">python3</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+</pre></div>
+</div>
+<div class="warning" style="background-color: #E7F2FA; color=#6AB0DE; padding: 10px; border: 1px solid #333; border-radius: 5px;">
+    NOTE: This step is for python users, if you use C language, please skip.
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="i2c_configuration.html" class="btn btn-neutral float-left" title="I2C Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="remote_desktop.html" class="btn btn-neutral float-right" title="Remote Desktop" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, LAFVIN.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
