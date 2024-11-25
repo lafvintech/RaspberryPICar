@@ -1,20 +1,12 @@
-2 Input (for Pi 4)
-====================
+.. _assemble_smart_car:
 
-**2.1 Controllers**
+2.Assemble Smart Car
+======================
 
-.. toctree::
-    :maxdepth: 1
+The link here is a detailed assembly video of the trolley
 
-    2.1.1 Button.md
-    2.1.2 Tilt Switch.md
-    2.1.3 Potentiometer.md
+`<https://youtu.be/4j7h5OY7Oq4>`_
 
-**2.2 Sensors**
+If the site does not open, you can try the following website
 
-.. toctree::
-    :maxdepth: 1
-
-    2.2.1 Photoresistor.md
-    2.2.2 Thermistor.md
-    2.2.3 DHT-11.md
+`<https://www.bilibili.com/video/BV1jW41197F6>`_

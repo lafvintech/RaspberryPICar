@@ -1,29 +1,29 @@
 .. _0_prepartion:
 
-0 Prepartion
+0.Prepartion
 ==================
 
-首先我们先安装树莓派系统,可以参考这一章
+We need to prepare Raspberry PI 4/5 in advance, and three 18650 batteries for 
+the Raspberry PI TF card, card reader.The above parts are not included in the kit.
 
-* :ref:`Installing_the_OS(Common)`
+We first carry out the system burning of the car and the configuration of related 
+Settings, you can see the details in this chapter.
+  
+* :ref:`system_burning&configuration`
 
+After that, we started to assemble our car. Here we provide a detailed assembly 
+video, which can be viewed in the following chapter.
 
-按照图片链接线缆并安装sd卡
+* :ref:`assemble_smart_car`
 
-.. image:: img/0/1.png
-   :width: 600
-   :alt: x.png
+Next we installed our platform client, which communicates with our Raspberry PI 
+car, transmits video streams, and sends commands to control the Smart car.
 
-如果您有备件显示器，请按照本节中的步骤操作。成功写入
-系统后，将SD卡放入RPI的SD卡插槽中。然后连接您的RPI通过HDMI电缆监视，通过USB端口连接鼠标
-和键盘,启动后稍后，设置后，您需要输入用户名和密码登录。如果你在安装系统的时候没设置过密码,
-默认的用户名：pi;密码：覆盆子。登录后，您应该看到以下屏幕。
+.. image:: ./img/0/APP_Support.png
 
-.. image:: img/0/1.png
-   :width: 600
-   :alt: x.png(树莓派主界面照片)
+1. `Android <dropbox>`_
+2. `Windows <dropbox>`_
+3. `IOS   <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=iphone>`_
+4. `Macos <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=mac>`_
 
-如果你没有屏幕可以参考这一章的If You Have No Screen这一段启用VNC远程连接
-
-* :ref:`Set_up_Your_Raspberry_Pi`
 

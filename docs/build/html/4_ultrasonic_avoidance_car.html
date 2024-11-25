@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.Ultrasonic Avoidance Car &mdash; RaspberryPiSmartCar  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5.Infrared Line Tracking Car" href="5_infrared_line_tracking_car.html" />
+    <link rel="prev" title="3.Light tracing Car" href="3_light_tracking_car.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="component_list.html">Component List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0_prepartion.html">0.Prepartion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_system_burning%26configuration.html">System Burning&amp;Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_assemble_smart_car.html">2 Assemble Smart Car</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_light_tracking_car.html">3.Light tracing Car</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4.Ultrasonic Avoidance Car</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-program">Run program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#details-of-the-program">Details of the program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#result-analysis">Result Analysis:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="5_infrared_line_tracking_car.html">5.Infrared Line Tracking Car</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_smart_video_car.html">6.Smart Video Car</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix/appendix.html">Appendix</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RaspberryPiSmartCar</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">4.Ultrasonic Avoidance Car</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/4_ultrasonic_avoidance_car.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ultrasonic-avoidance-car">
+<h1>4.Ultrasonic Avoidance Car<a class="headerlink" href="#ultrasonic-avoidance-car" title="Link to this heading"></a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<p>The obstacle avoidance function of the car mainly uses the HC-SR04 ultrasonic module.
+The ultrasonic module is controlled by the servo. The servo rotates to the left,
+middle and right repeatedly, so that the ultrasonic module measures the distance
+of obstacles on the left, middle and right directions. And then it controls the
+car to move according to different distances.</p>
+</section>
+<section id="run-program">
+<h2>Run program<a class="headerlink" href="#run-program" title="Link to this heading"></a></h2>
+<p>1. You can jump to the project folder directly by running this command:
+<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/home/pi/Code/Pi4/Server</span></code></p>
+<p>2. Run Light.py:
+<code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">python</span> <span class="pre">Ultrasonic.py</span></code></p>
+<p>You can press “Ctrl + C” to end the program</p>
+</section>
+<section id="details-of-the-program">
+<h2>Details of the program<a class="headerlink" href="#details-of-the-program" title="Link to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span> <span class="k">class</span> <span class="nc">Ultrasonic</span><span class="p">:</span>
+<span class="hll"><span class="linenos"> 2</span> <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span class="linenos"> 3</span>     <span class="n">GPIO</span><span class="o">.</span><span class="n">setwarnings</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="linenos"> 4</span>     <span class="bp">self</span><span class="o">.</span><span class="n">trigger_pin</span> <span class="o">=</span> <span class="mi">27</span>
+<span class="linenos"> 5</span>     <span class="bp">self</span><span class="o">.</span><span class="n">echo_pin</span> <span class="o">=</span> <span class="mi">22</span>
+<span class="linenos"> 6</span>     <span class="bp">self</span><span class="o">.</span><span class="n">MAX_DISTANCE</span> <span class="o">=</span> <span class="mi">300</span>  <span class="c1"># define the maximum measuring distance, unit: cm</span>
+<span class="linenos"> 7</span>     <span class="bp">self</span><span class="o">.</span><span class="n">timeOut</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">MAX_DISTANCE</span> <span class="o">*</span> <span class="mi">60</span>  <span class="c1"># calculate timeout according to the maximum measuring distance</span>
+<span class="linenos"> 8</span>     <span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BCM</span><span class="p">)</span>
+<span class="linenos"> 9</span>     <span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">trigger_pin</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<span class="linenos">10</span>     <span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">echo_pin</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">IN</span><span class="p">)</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span> <span class="k">def</span> <span class="nf">pulseIn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pin</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">timeOut</span><span class="p">):</span>  <span class="c1"># obtain pulse time of a pin under timeOut</span>
+<span class="linenos">13</span>     <span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="linenos">14</span>     <span class="k">while</span> <span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">input</span><span class="p">(</span><span class="n">pin</span><span class="p">)</span> <span class="o">!=</span> <span class="n">level</span><span class="p">):</span>
+<span class="linenos">15</span>         <span class="k">if</span> <span class="p">((</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">timeOut</span> <span class="o">*</span> <span class="mf">0.000001</span><span class="p">):</span>
+<span class="linenos">16</span>             <span class="k">return</span> <span class="mi">0</span>
+<span class="linenos">17</span>     <span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="linenos">18</span>     <span class="k">while</span> <span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">input</span><span class="p">(</span><span class="n">pin</span><span class="p">)</span> <span class="o">==</span> <span class="n">level</span><span class="p">):</span>
+<span class="linenos">19</span>         <span class="k">if</span> <span class="p">((</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">timeOut</span> <span class="o">*</span> <span class="mf">0.000001</span><span class="p">):</span>
+<span class="linenos">20</span>             <span class="k">return</span> <span class="mi">0</span>
+<span class="linenos">21</span>     <span class="n">pulseTime</span> <span class="o">=</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1000000</span>
+<span class="linenos">22</span>     <span class="k">return</span> <span class="n">pulseTime</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span> <span class="k">def</span> <span class="nf">get_distance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># get the measurement results of ultrasonic module,with unit: cm</span>
+<span class="linenos">25</span>     <span class="n">distance_cm</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="linenos">26</span>     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="linenos">27</span>         <span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">trigger_pin</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>  <span class="c1"># make trigger_pin output 10us HIGH level</span>
+<span class="linenos">28</span>         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.00001</span><span class="p">)</span>  <span class="c1"># 10us</span>
+<span class="linenos">29</span>         <span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">trigger_pin</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">LOW</span><span class="p">)</span>  <span class="c1"># make trigger_pin output LOW level</span>
+<span class="linenos">30</span>         <span class="n">pingTime</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pulseIn</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">echo_pin</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeOut</span><span class="p">)</span>  <span class="c1"># read pulse time of echo_pin</span>
+<span class="linenos">31</span>         <span class="n">distance_cm</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">pingTime</span> <span class="o">*</span> <span class="mf">340.0</span> <span class="o">/</span> <span class="mf">2.0</span> <span class="o">/</span> <span class="mf">10000.0</span>  <span class="c1"># calculate distance with sound speed 340m/s</span>
+<span class="linenos">32</span>     <span class="n">distance_cm</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">distance_cm</span><span class="p">)</span>
+<span class="linenos">33</span>     <span class="n">final_distance</span> <span class="o">=</span> <span class="n">distance_cm</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># Take the middle value after sorting</span>
+<span class="linenos">34</span>     <span class="c1"># If measured value equals 0, convert to 255</span>
+<span class="linenos">35</span>     <span class="k">if</span> <span class="n">final_distance</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">36</span>         <span class="n">final_distance</span> <span class="o">=</span> <span class="mi">255</span>
+<span class="linenos">37</span>     <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">final_distance</span><span class="p">)</span>  <span class="c1"># Return the processed integer distance value</span>
+<span class="linenos">38</span>
+<span class="linenos">39</span> <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="linenos">40</span>     <span class="bp">self</span><span class="o">.</span><span class="n">PWM</span> <span class="o">=</span> <span class="n">Motor</span><span class="p">()</span>
+<span class="linenos">41</span>     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">42</span>         <span class="n">M</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_distance</span><span class="p">()</span>
+<span class="linenos">43</span>         <span class="k">if</span> <span class="n">M</span> <span class="o">&lt;=</span> <span class="mi">20</span><span class="p">:</span>  <span class="c1"># If obstacle is too close (&lt;=20cm)</span>
+<span class="linenos">44</span>             <span class="bp">self</span><span class="o">.</span><span class="n">PWM</span><span class="o">.</span><span class="n">setMotorModel</span><span class="p">(</span><span class="o">-</span><span class="mi">1000</span><span class="p">,</span> <span class="o">-</span><span class="mi">1000</span><span class="p">,</span> <span class="o">-</span><span class="mi">1000</span><span class="p">,</span> <span class="o">-</span><span class="mi">1000</span><span class="p">)</span>  <span class="c1"># Move backward</span>
+<span class="linenos">45</span>             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="linenos">46</span>             <span class="k">if</span> <span class="mi">50</span> <span class="o">&gt;=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">):</span>  <span class="c1"># Randomly choose turn direction</span>
+<span class="linenos">47</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">PWM</span><span class="o">.</span><span class="n">setMotorModel</span><span class="p">(</span><span class="o">-</span><span class="mi">2000</span><span class="p">,</span> <span class="o">-</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>  <span class="c1"># Turn left</span>
+<span class="linenos">48</span>             <span class="k">else</span><span class="p">:</span>
+<span class="linenos">49</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">PWM</span><span class="o">.</span><span class="n">setMotorModel</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="o">-</span><span class="mi">2000</span><span class="p">,</span> <span class="o">-</span><span class="mi">2000</span><span class="p">)</span>  <span class="c1"># Turn right</span>
+<span class="linenos">50</span>             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="linenos">51</span>         <span class="k">elif</span> <span class="mi">20</span> <span class="o">&lt;</span> <span class="n">M</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="p">:</span>  <span class="c1"># If obstacle is at warning distance (20-30cm)</span>
+<span class="linenos">52</span>             <span class="bp">self</span><span class="o">.</span><span class="n">PWM</span><span class="o">.</span><span class="n">setMotorModel</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Stop the car</span>
+<span class="linenos">53</span>             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="linenos">54</span>             <span class="k">if</span> <span class="mi">50</span> <span class="o">&gt;=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">):</span>  <span class="c1"># Randomly choose turn direction</span>
+<span class="linenos">55</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">PWM</span><span class="o">.</span><span class="n">setMotorModel</span><span class="p">(</span><span class="o">-</span><span class="mi">2000</span><span class="p">,</span> <span class="o">-</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>  <span class="c1"># Turn left</span>
+<span class="linenos">56</span>             <span class="k">else</span><span class="p">:</span>
+<span class="linenos">57</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">PWM</span><span class="o">.</span><span class="n">setMotorModel</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="o">-</span><span class="mi">2000</span><span class="p">,</span> <span class="o">-</span><span class="mi">2000</span><span class="p">)</span>  <span class="c1"># Turn right</span>
+<span class="linenos">58</span>             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="linenos">59</span>         <span class="k">else</span><span class="p">:</span>  <span class="c1"># If no obstacle detected (&gt;30cm)</span>
+<span class="linenos">60</span>             <span class="bp">self</span><span class="o">.</span><span class="n">PWM</span><span class="o">.</span><span class="n">setMotorModel</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>  <span class="c1"># Move forward</span>
+<span class="linenos">61</span>
+<span class="linenos">62</span> <span class="n">ultrasonic</span> <span class="o">=</span> <span class="n">Ultrasonic</span><span class="p">()</span>
+<span class="linenos">63</span> <span class="c1"># Main program logic follows:</span>
+<span class="linenos">64</span> <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="linenos">65</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Program is starting ... &#39;</span><span class="p">)</span>
+<span class="linenos">66</span> <span class="k">try</span><span class="p">:</span>
+<span class="linenos">67</span>     <span class="n">ultrasonic</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="linenos">68</span> <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>  <span class="c1"># When &#39;Ctrl+C&#39; is pressed, the child program destroy() will be executed.</span>
+<span class="linenos">69</span>     <span class="n">PWM</span><span class="o">.</span><span class="n">setMotorModel</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Stop the car when program is interrupted</span>
+</pre></div>
+</div>
+</section>
+<section id="result-analysis">
+<h2>Result Analysis:<a class="headerlink" href="#result-analysis" title="Link to this heading"></a></h2>
+<p>The ultrasonic obstacle avoidance car detects obstacle distances through a single front ultrasonic sensor and performs different avoidance actions based on different distance ranges:</p>
+<ol class="arabic simple">
+<li><p>When detected distance &gt; 30cm:
+- Indicates no obstacles within 30 centimeters in front
+- The car continues to move forward straight (setMotorModel(1000, 1000, 1000, 1000))</p></li>
+<li><p>When detected distance ≤ 20cm:
+- Indicates obstacles are very close with risk of collision
+- The car first moves backward (setMotorModel(-1000, -1000, -1000, -1000))
+- Pauses for 0.3 seconds
+- Randomly chooses to turn left or right to find a new path
+- Continues turning motion for 0.3 seconds</p></li>
+<li><p>When detected distance is between 20-30cm:
+- Indicates obstacles ahead but still at a safe distance
+- The car stops first (setMotorModel(0, 0, 0, 0))
+- Pauses for 0.2 seconds
+- Randomly chooses to turn left or right to find a new path
+- Continues turning motion for 0.3 seconds</p></li>
+</ol>
+<p>Through this control strategy, the car can:
+- Maintain forward movement within safe distances
+- Avoid obstacles in time when encountered
+- Explore new viable paths through random turning
+- Effectively prevent collisions with obstacles</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="3_light_tracking_car.html" class="btn btn-neutral float-left" title="3.Light tracing Car" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="5_infrared_line_tracking_car.html" class="btn btn-neutral float-right" title="5.Infrared Line Tracking Car" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, LAFVIN.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
