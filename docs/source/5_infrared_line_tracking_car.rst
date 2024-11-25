@@ -20,8 +20,12 @@ Run program
 1. You can jump to the project folder directly by running this command:
 ``cd /home/pi/Code/Pi4/Server``
 
-1. Run Light.py:
+.. image:: ./img/5/path.png
+
+2. Run Light.py:
 ``sudo python Line_Tracking.py``
+
+.. image:: ./img/5/running.png
 
 You can press "Ctrl + C" to end the program
 

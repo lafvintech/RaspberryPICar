@@ -2,9 +2,6 @@ Appendix
 ==============
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
-    i2c_configuration
-    spi_configuration.md
-    remote_desktop.md
-    get_ip.md
+    how_to_use_vnc_to_access_the_raspberry_pi_desktop

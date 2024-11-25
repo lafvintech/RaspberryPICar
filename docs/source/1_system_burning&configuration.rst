@@ -58,11 +58,11 @@ Press **Ctrl+Shift+X** or click the **setting** icon to open the **Advanced opti
    - Now that the Raspberry Pi doesn't have a default password, you will need to set it yourself. Also, the username can be changed.
    - For remote access, you will also need to enable SSH manually.
 
-.. image:: ./preparation/img/image15(1).png
+.. image:: ./img/1/image15(1).png
 
 **wifi country** should be set the two-letter `ISO/IEC alpha2 code <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements>`_ for the country in which you are using your Raspberry Pi.
 
-.. image:: ./preparation/img/image15(2).png
+.. image:: ./img/1/image15(2).png
 
 Then scroll down to complete the wifi configuration and click **SAVE**.
 
@@ -70,16 +70,16 @@ Then scroll down to complete the wifi configuration and click **SAVE**.
 
 When asked "Would you like to apply OS customisation settings?", press "YES".
 
-.. image:: ./preparation/img/image17.png
+.. image:: ./img/1/image17.png
 
 **Step 8**
 
 If your SD card currently has any files on it, you may wish to back up these files first to prevent you from permanently losing them. If there is no file to be backed up, click **Yes**.
 
-.. image:: ./preparation/img/image18.png
+.. image:: ./img/1/image18.png
 
 **Step 9**
 
 After waiting for a period of time, the following window will appear to represent the completion of writing.
 
-.. image:: ./preparation/img/image19.png
+.. image:: ./img/1/image19.png

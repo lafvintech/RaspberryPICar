@@ -45,7 +45,7 @@ Enter Username (pi) and Password(admin).
 
 .. image:: ./img/RemoteDesktop_7.png
 
-Step 6
+Step 6 
 ^^^^^^^
 Now you can see the desktop of the Raspberry Pi
 
@@ -65,13 +65,15 @@ Open the terminal
 Type in: ``sudo systemctl stop main-server.service`` to temporarily disable the 
 main program.
 
+.. image:: ./img/trunoff_main-server.png
+
 Then you can navigate to the folder ``/home/pi/Code/Pi4/Server/`` to find all the 
 car's files, where you can run individual programs.
 
 If you have finished testing and want to run the main program again, you can 
 enter ``sudo systemctl start main-server.service`` in the terminal.
 
-.. image:: ./img/trunoff_main-server.png
+.. image:: ./img/turnon_main-server.png
 
 Alternatively, you can press the two buttons on the car's mainboard to restart 
 the car. The restart will automatically launch the car's main program, and then 

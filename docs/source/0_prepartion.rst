@@ -3,8 +3,14 @@
 0.Prepartion
 ==================
 
-We need to prepare Raspberry PI 4/5 in advance, and three 18650 batteries for 
-the Raspberry PI TF card, card reader.The above parts are not included in the kit.
+We need to prepare
+
+1. Raspberry PI 4/5 in advance
+2. three 18650 batteries for 
+3. SD card
+4. card reader.
+
+The above parts are not included in the kit.
 
 We first carry out the system burning of the car and the configuration of related 
 Settings, you can see the details in this chapter.
