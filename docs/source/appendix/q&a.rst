@@ -3,18 +3,20 @@
 Q&A
 =====
 
-本章节列举了一些你可能会遇到的一些问题,这里会有一些解决方案
+This section lists some common issues you might encounter and provides solutions for them.
+--------------------------------------------------------
 
-Q:如果使用过程中突然没有画面怎么办?
-A:有可能是摄像头或者树莓派接口松动,重新安装好并重新按动小车的电源按钮重启并重新链接
+Q: What should you do if there is suddenly no image during use?
+A: It could be that the camera or the Raspberry Pi interface has become loose. Reinstall it and restart the car by pressing the power button, then reconnect.
 
-Q:如果小车蜂鸣器在使用途中,有规律的响两声或者四声?
-A:这是小车的电量警告,证明小车电池没电了,建议更换电池并充电
+Q: What if the car's buzzer beeps twice or four times in a regular pattern while in use?
+A: This is a battery warning from the car, indicating that the car's battery is low. It is recommended to replace the batteries and recharge them.
 
-Q:如果小车烧录完成之后,连接并启动后OLED没有显示怎么办?
-A:小车首次烧录后,需要重启一次,重启完OLED如果你WIFI配置正确的话,会显示小车的IP地址
+Q: What should you do if the OLED does not display anything after the car is burned and started?
+A: After the car's first burn, it needs to be restarted. Once restarted, if your WiFi configuration is correct, the OLED will display the car's IP address.
 
-Q:如果小车超声波没有成功避障?
-A:障碍物需要最低10cm的高度以及保持一定距离
+Q: What if the car's ultrasonic sensor fails to avoid obstacles successfully?
+A: The obstacle needs to be at least 10cm in height and maintain a certain distance.
+
 
 

@@ -1,7 +1,7 @@
 Component List
 ===================
 
-.. image:: ./img/List.jpg
+.. image:: ./img/List.jpeg
 
 **Multifunctional Expansion Board** * *1*
 
