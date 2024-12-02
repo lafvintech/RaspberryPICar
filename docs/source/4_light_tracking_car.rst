@@ -37,7 +37,6 @@ Run program
 
 .. image:: ./img/3/running.png
 
-
 You can press "Ctrl + C" to end the program
 
 Details of the program
@@ -93,3 +92,5 @@ left turn.
 If the voltage on the right side is higher than the left, the car will make a 
 right turn. By modifying the conditions in the program, you can tailor the car's 
 behavior to suit the ambient light conditions.
+
+.. image:: ./img/4/light.gif

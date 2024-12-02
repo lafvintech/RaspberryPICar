@@ -5,10 +5,10 @@
 
 We need to prepare
 
-1. Raspberry PI 4/5 in advance
-2. three 18650 batteries for 
+1. Raspberry PI 4/5
+2. three 18650 batteries 
 3. SD card
-4. card reader.
+4. card reader
 
 The above parts are not included in the kit.
 

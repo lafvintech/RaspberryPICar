@@ -129,3 +129,5 @@ Through this control strategy, the car can:
 - Vary turning intensity based on deviation amount
 - Handle different line following scenarios effectively
 - Stop safely when line is lost or at intersections
+
+.. image:: ./img/5/line.gif

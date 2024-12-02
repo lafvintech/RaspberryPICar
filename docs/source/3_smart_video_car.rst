@@ -58,3 +58,24 @@ In the bottom left corner is the joystick, which controls the movement of the ca
 
 .. image:: ./img/6/bottom.png
 
+----------------------------------------------------------------------------------------------------
+
+Next
+------
+After your Raspberry Pi system has been successfully burned and the smart car 
+assembled, and you have installed three 18650 batteries into the car,
+
+Once powered on, after a while you will see the OLED screen display that it is 
+acquiring an IP. If your WiFi settings are correct, you should be able to obtain 
+an IP quickly. Then the car's buzzer will beep, indicating that the main service 
+program of the car has started. At this point, you can open your app, enter the 
+IP address shown on the OLED screen, and click the connect button to see the 
+camera view of the smart car.
+
+.. note:: 
+    Note that it is best to place the car on the ground before powering on, not 
+    on a table, to avoid damage from accidental operation.
+
+After that, we can use the app to control the smart car, including the car's 
+movement, the angle of the servo, switching the driving mode of the car, 
+controlling the speed of the car, and controlling the RGB lights of the car.
