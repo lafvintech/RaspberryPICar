@@ -1,8 +1,7 @@
 .. _unzip:
 
-How to Unzip the Client
-============================
-
+How to Unzip?
+===============
 When you click on the download link according to the tutorial, you will find that you have downloaded a zip compressed file.
 
 .. image:: img/zip.png
@@ -36,3 +35,5 @@ You can click "Extract" to the location where you want to store the files. Here,
 After that, we can find this folder on the desktop.
 
 .. image:: img/bandzip7.png
+
+The Raspberry PI image file can also be extracted using bandzip.
