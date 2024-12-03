@@ -69,8 +69,10 @@ Press **Ctrl+Shift+X** or click the **setting** icon to open the **Advanced opti
    - Now that the Raspberry Pi doesn't have a default password, you will need to set it yourself. Also, the username can be changed.
    - For remote access, you will also need to enable SSH manually.
    - You need to enter the Wi-Fi name and password in "Configure wireless LAN," and also set the Wi-Fi country, otherwise, you won't be able to connect to the internet.
+   - Our user name and password here are pi and admin.
 
 .. image:: ./img/1/image15(1).png
+
 
 **Wireless LAN country** should be set the two-letter `ISO/IEC alpha2 code <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements>`_ for the country in which you are using your Raspberry Pi.
 
