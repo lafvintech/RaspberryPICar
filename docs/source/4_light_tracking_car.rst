@@ -97,6 +97,6 @@ behavior to suit the ambient light conditions.
 
 
 Need Help?
-===========
+------------------
 
 **tech_edu_service@outlook.com**

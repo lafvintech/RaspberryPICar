@@ -42,6 +42,6 @@ configuration during the burning process and re-burn the system if necessary.
 .. image:: ./img/1/image15(1).png
 
 Need Help?
-===========
+------------------
 
 **tech_edu_service@outlook.com**

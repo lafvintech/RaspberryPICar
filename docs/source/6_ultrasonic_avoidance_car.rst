@@ -140,6 +140,6 @@ Through this control strategy, the car can:
 - Effectively prevent collisions with obstacles
 
 Need Help?
-===========
+------------------
 
 **tech_edu_service@outlook.com**

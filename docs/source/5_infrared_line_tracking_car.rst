@@ -134,6 +134,6 @@ Through this control strategy, the car can:
 
 
 Need Help?
-===========
+------------------
 
 **tech_edu_service@outlook.com**
