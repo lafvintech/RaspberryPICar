@@ -17,36 +17,36 @@ up. Wait for a while, and the screen will display the IP address, followed by a
 beep from the car's buzzer.
 
 Step 1
-^^^^^^^
+------
 You need to download and install the  `VNC viewer <https://www.realvnc.com/en/connect/download/viewer/>`_ on personal computer. After the 
 installation is done, open it.
 
 Step 2
-^^^^^^^
+------
 Then select “New connection”.
 
 .. image:: ./img/RemoteDesktop_5.png
 
 Step 3
-^^^^^^^
-Input IP address of Raspberry Pi and any Name.这里的IP是小车OLED上面的
+------
+Input IP address of Raspberry Pi and any Name.The IP here is from the car OLED
 
 .. image:: ./img/RemoteDesktop_6.png
 
 Step 4
-^^^^^^^
+------
 Double click the connection just created:
 
 .. image:: ./img/RemoteDesktop_9.png
 
 Step 5
-^^^^^^^
+------
 Enter Username (pi) and Password(admin).
 
 .. image:: ./img/RemoteDesktop_7.png
 
 Step 6 
-^^^^^^^
+------
 Now you can see the desktop of the Raspberry Pi
 
 .. image:: ./img/desktop1.png

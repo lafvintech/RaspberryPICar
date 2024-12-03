@@ -4,6 +4,7 @@
 ==================
 
 We need to prepare
+------------------
 
 1. Raspberry PI 4/5
 2. three 18650 batteries 
@@ -27,9 +28,10 @@ car, transmits video streams, and sends commands to control the Smart car.
 
 .. image:: ./img/0/APP_Support.png
 
-1. `Android <https://www.dropbox.com/scl/fo/466j6z0az8czybqjjmuro/AGJnr6eCqAs70B3E6OjJ7R8?rlkey=thvupxzy213po0jarfmi4fujo&e=1&st=cus7z4kr&dl=0>`_
-2. `Windows <https://www.dropbox.com/scl/fo/o1rbv33e6cm72bizreh8v/ALHQdUU-NBrsDn_AbMX1VxI?rlkey=0fyzzuwurngelni7mpqjmjrqh&st=ghp7r003&dl=1>`_
-3. `IOS   <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=iphone>`_
-4. `Macos <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=mac>`_
+* :download:`Android <https://www.dropbox.com/scl/fo/466j6z0az8czybqjjmuro/AGJnr6eCqAs70B3E6OjJ7R8?rlkey=thvupxzy213po0jarfmi4fujo&e=1&st=cus7z4kr&dl=0>`
+* :download:`Windows <https://www.dropbox.com/scl/fo/o1rbv33e6cm72bizreh8v/ALHQdUU-NBrsDn_AbMX1VxI?rlkey=0fyzzuwurngelni7mpqjmjrqh&st=ghp7r003&dl=1>`
+* :download:`IOS   <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=iphone>`
+* :download:`Macos <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=mac>`
+
 
 

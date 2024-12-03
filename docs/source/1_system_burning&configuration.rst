@@ -4,6 +4,7 @@
 ===============================
 
 **Step 1 Download the burning tool**
+--------------------------------------
 
 Raspberry Pi have developed a graphical SD card writing tool that works on Mac OS, Ubuntu 18.04 and Windows, and is the easiest option for most users as it will download the image and install it automatically to the SD card.
 
@@ -12,6 +13,7 @@ Visit the `Raspberrypi Imager <https://www.raspberrypi.org/software/>`_. Click o
 .. image:: ./img/1/software1.png
 
 **Step 2 Download system image**
+--------------------------------------
 
 When you launch the installer, your operating system may try to block you from running it. For example, on Windows I receive the following message:
 
@@ -32,10 +34,12 @@ and 5 image files.
 :ref:`unzip` 
 
 **Step 3 Insert the SD card into the card reader and computer**
+----------------------------------------------------------------------------
 
 Insert the SD card into the card reader and plug it into the usb port of your computer.
 
 **Step 4 Select SD card and image**
+--------------------------------------
 
 Select your Raspberry PI model in the burning software, and select the operating 
 system of the corresponding img package you just downloaded.
@@ -57,6 +61,7 @@ It should end up looking something like this.
 
 
 **Step 5 Configure burn Settings**
+--------------------------------------
 
 Press **Ctrl+Shift+X** or click the **setting** icon to open the **Advanced options** page to enable SSH and set username and password.
 
@@ -74,18 +79,21 @@ Press **Ctrl+Shift+X** or click the **setting** icon to open the **Advanced opti
 Then scroll down to complete the wifi configuration and click **SAVE**.
 
 **Step 6**
+--------------------------------------
 
 When asked "Would you like to apply OS customisation settings?", press "YES".
 
 .. image:: ./img/1/image17.png
 
 **Step 7**
+--------------------------------------
 
 If your SD card currently has any files on it, you may wish to back up these files first to prevent you from permanently losing them. If there is no file to be backed up, click **Yes**.
 
 .. image:: ./img/1/image18.png
 
 **Step 8 Burn completion**
+--------------------------------------
 
 After waiting for a period of time, the following window will appear to represent the completion of writing.
 
