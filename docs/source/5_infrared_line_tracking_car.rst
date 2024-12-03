@@ -131,3 +131,9 @@ Through this control strategy, the car can:
 - Stop safely when line is lost or at intersections
 
 .. image:: ./img/5/line.gif
+
+
+Need Help?
+===========
+
+**tech_edu_service@outlook.com**

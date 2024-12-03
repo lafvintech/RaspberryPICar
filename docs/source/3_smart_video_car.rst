@@ -27,14 +27,24 @@ from the server, and can also send commands to the server to control the car.
 The client can run on different operating systems, including Android, Windows, 
 iOS, and macOS. You can download it from the following four links respectively:
 
-.. image:: ./img/6/Mac_ware.png
+**IOS**
 
 .. image:: ./img/6/IOS_ware.png
 
-1. `Android <dropbox>`_
-2. `Windows <dropbox>`_
-3. `IOS   <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=iphone>`_
-4. `Macos <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=mac>`_
+**Android**
+
+.. image:: ./img/3/apk_download.jpeg
+
+* :download:`Android <https://www.dropbox.com/scl/fo/466j6z0az8czybqjjmuro/AGJnr6eCqAs70B3E6OjJ7R8?rlkey=thvupxzy213po0jarfmi4fujo&e=1&st=cus7z4kr&dl=0>`
+* :download:`Windows <https://www.dropbox.com/scl/fo/o1rbv33e6cm72bizreh8v/ALHQdUU-NBrsDn_AbMX1VxI?rlkey=0fyzzuwurngelni7mpqjmjrqh&st=ghp7r003&dl=1>`
+* :download:`IOS   <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=iphone>`
+* :download:`Macos <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=mac>`
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* :ref:`unzip`
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 After downloading and opening the app, you will see this interface:
 
@@ -60,6 +70,16 @@ In the bottom left corner is the joystick, which controls the movement of the ca
 
 ----------------------------------------------------------------------------------------------------
 
+The interface on the computer is similar to that on the mobile phone.
+
+.. image:: ./img/1/app_win1.png
+
+A new feature added on the computer is facial recognition. Once enabled, the steering mechanism of the car will follow the movements of the face.
+
+Additionally, you can control the car using the keyboard.
+
+WASD can control the car's forward, backward, left, and right movements, while the arrow keys can control the steering mechanism of the car.
+
 Next
 ------
 After your Raspberry Pi system has been successfully burned and the smart car 
@@ -79,3 +99,9 @@ camera view of the smart car.
 After that, we can use the app to control the smart car, including the car's 
 movement, the angle of the servo, switching the driving mode of the car, 
 controlling the speed of the car, and controlling the RGB lights of the car.
+
+
+Need Help?
+===========
+
+**tech_edu_service@outlook.com**

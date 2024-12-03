@@ -87,3 +87,9 @@ If your SD card currently has any files on it, you may wish to back up these fil
 After waiting for a period of time, the following window will appear to represent the completion of writing.
 
 .. image:: ./img/1/image19.png
+
+
+Need Help?
+===========
+
+**tech_edu_service@outlook.com**

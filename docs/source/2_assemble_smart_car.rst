@@ -33,10 +33,15 @@ After that, we should be able to see the OLED display normally.
 
 Once we can see the OLED display as described above, it means the system has 
 obtained an IP address, which is the normal behavior. If the system fails to 
-obtain an IP address and the OLED screen displays "IP not found," please refer 
+obtain an IP address and the OLED screen displays **IP not found** please refer 
 to the steps in the following section, specifically Step 5, to check your WiFi 
 configuration during the burning process and re-burn the system if necessary.
 
 * :ref:`system_burning&configuration`
 
 .. image:: ./img/1/image15(1).png
+
+Need Help?
+===========
+
+**tech_edu_service@outlook.com**

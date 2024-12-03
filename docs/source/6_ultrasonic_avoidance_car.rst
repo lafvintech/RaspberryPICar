@@ -138,3 +138,8 @@ Through this control strategy, the car can:
 - Avoid obstacles in time when encountered
 - Explore new viable paths through random turning
 - Effectively prevent collisions with obstacles
+
+Need Help?
+===========
+
+**tech_edu_service@outlook.com**

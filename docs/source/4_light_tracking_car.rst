@@ -94,3 +94,9 @@ right turn. By modifying the conditions in the program, you can tailor the car's
 behavior to suit the ambient light conditions.
 
 .. image:: ./img/4/light.gif
+
+
+Need Help?
+===========
+
+**tech_edu_service@outlook.com**
