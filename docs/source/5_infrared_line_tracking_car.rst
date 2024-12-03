@@ -29,7 +29,6 @@ Run program
 
 You can press "Ctrl + C" to end the program
 
-
 Details of the program
 ------------------------
 
