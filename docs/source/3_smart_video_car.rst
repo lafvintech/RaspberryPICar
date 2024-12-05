@@ -34,7 +34,7 @@ iOS, and macOS. You can download it from the following four links respectively:
    Android App
 
 .. figure:: img/IOS_app.png
-   :align: right
+   :align: left
    :name: ios-app
 
    iOS App
