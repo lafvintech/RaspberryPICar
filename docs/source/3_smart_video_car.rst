@@ -27,15 +27,21 @@ from the server, and can also send commands to the server to control the car.
 The client can run on different operating systems, including Android, Windows, 
 iOS, and macOS. You can download it from the following four links respectively:
 
-**IOS**
+.. figure:: img/Android_app.png
+   :align: left
+   :name: android-app
+
+   Android App
+
+.. figure:: img/IOS_app.png
+   :align: right
+   :name: ios-app
+
+   iOS App
 
 .. image:: ./img/6/IOS_ware.png
 
-**Android**
-
-.. image:: ./img/3/apk_download.jpeg
-
-* :download:`Android <https://www.dropbox.com/scl/fo/466j6z0az8czybqjjmuro/AGJnr6eCqAs70B3E6OjJ7R8?rlkey=thvupxzy213po0jarfmi4fujo&e=1&st=cus7z4kr&dl=0>`
+* :download:`Android <https://github.com/lafvintech/RaspberryPICar/releases/download/v1.0.0/RaspPICar.apk>`
 * :download:`Windows <https://www.dropbox.com/scl/fo/o1rbv33e6cm72bizreh8v/ALHQdUU-NBrsDn_AbMX1VxI?rlkey=0fyzzuwurngelni7mpqjmjrqh&st=ghp7r003&dl=1>`
 * :download:`IOS   <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=iphone>`
 * :download:`Macos <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=mac>`
