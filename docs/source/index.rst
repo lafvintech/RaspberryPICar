@@ -2,7 +2,7 @@ LAFVIN Raspberry Pi Smart Car
 ================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    component_list
    0_prepartion
