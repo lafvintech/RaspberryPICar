@@ -15,6 +15,14 @@ sensors.
     be able to start.
     :ref:`VNC`
 
+.. note:: 
+
+    If you need to operate the tracking function normally, before running the program, 
+    you need to use the black tape included with the kit to paste a path with two tape 
+    widths on the ground or a flat surface. This way, the tracking sensor can recognize 
+    it properly.
+
+
 Run program
 ------------   
 1. You can jump to the project folder directly by running this command:
