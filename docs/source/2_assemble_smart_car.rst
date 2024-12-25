@@ -7,6 +7,10 @@
    
    <iframe width="560" height="315" src="https://www.youtube.com/embed/4ASke1qjOh4?si=tZyeTam60YYdIGUH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+Or you can download the Installation Tutorial Video
+
+* :download:`Installation Tutorial Video <https://www.dropbox.com/scl/fo/qy1pb2digre7kc61toi0o/AA42Ij0n_alPvPB30meBeHM?rlkey=rovnde819ihtsy0ru4c0zmch1&e=1&st=r5evhc7n&dl=1>`
+
 First, after ensuring that the system has been successfully burned, the WiFi is 
 configured, and the small car is assembled, we can officially use the small car.
 
