@@ -3,14 +3,9 @@
 2.Assemble Smart Car
 ======================
 
-The link here is a detailed assembly video of the trolley
-
-`<https://youtu.be/4j7h5OY7Oq4>`_
-
-If the site does not open, you can try the following website
-
-`<https://www.bilibili.com/video/BV1jW41197F6>`_
-
+.. raw:: html
+   
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/4ASke1qjOh4?si=tZyeTam60YYdIGUH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 First, after ensuring that the system has been successfully burned, the WiFi is 
 configured, and the small car is assembled, we can officially use the small car.
