@@ -9,7 +9,7 @@
 
 Or you can download the Installation Tutorial Video
 
-* :download:`Installation Tutorial Video <https://www.dropbox.com/scl/fo/ssmlerkwngmcanppthnv3/AODY8U48EFLClQ6zifOcB0Q?rlkey=4oaaxui1fjmvun54rvuq1t73e&st=1ffnj664&dl=1>`
+* :download:`Installation-Tutorial-Video <https://www.dropbox.com/scl/fo/ssmlerkwngmcanppthnv3/AODY8U48EFLClQ6zifOcB0Q?rlkey=4oaaxui1fjmvun54rvuq1t73e&st=1ffnj664&dl=1>`
 
 First, after ensuring that the system has been successfully burned, the WiFi is 
 configured, and the small car is assembled, we can officially use the small car.
