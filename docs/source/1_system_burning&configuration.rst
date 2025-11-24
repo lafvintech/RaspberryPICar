@@ -27,7 +27,7 @@ download at this website.
 According to your Raspberry PI model download, we currently offer Raspberry PI 4 
 and 5 image files.
 
-* :download:`RPI4 Image <https://www.dropbox.com/scl/fo/qy1pb2digre7kc61toi0o/AA42Ij0n_alPvPB30meBeHM?rlkey=rovnde819ihtsy0ru4c0zmch1&e=1&st=r5evhc7n&dl=1>`
+* :download:`RPI3B/RPI4 Image <https://www.dropbox.com/scl/fo/qy1pb2digre7kc61toi0o/AA42Ij0n_alPvPB30meBeHM?rlkey=rovnde819ihtsy0ru4c0zmch1&e=1&st=r5evhc7n&dl=1>`
 
 * :download:`RPI5 Image <https://www.dropbox.com/scl/fo/knr2xdx82oe09vwejbt3x/AEy2A2zeRxKYPPgWmPUAFPE?rlkey=94adhnmnzr9plse5abl5of68a&e=1&st=ri27qa4f&dl=1>`
 
