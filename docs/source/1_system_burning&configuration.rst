@@ -24,8 +24,7 @@ If this pops up, click on **More info** and then **Run anyway**, then follow the
 We also need to download the corresponding .img system image package, which we can 
 download at this website.
 
-According to your Raspberry PI model download, we currently offer Raspberry PI 4 
-and 5 image files.
+Depending on your Raspberry Pi model, we currently offer images for the Raspberry Pi 3B 4B and 5.
 
 * :download:`RPI3B/RPI4 Image <https://www.dropbox.com/scl/fo/qy1pb2digre7kc61toi0o/AA42Ij0n_alPvPB30meBeHM?rlkey=rovnde819ihtsy0ru4c0zmch1&e=1&st=r5evhc7n&dl=1>`
 
