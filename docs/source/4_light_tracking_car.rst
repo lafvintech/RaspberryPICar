@@ -23,12 +23,12 @@ Put your car in a darker environment.
     Before running the standalone program, make sure to shut down the main program 
     ccording to the following sections; otherwise, the standalone program will not 
     be able to start.
-    :ref:`VNC`
+    :ref:`test_subroutine`
 
 Run program
 ------------   
 1. You can jump to the project folder directly by running this command:
-``cd /home/pi/Code/Pi4/Server``
+``cd /opt/Code/Pi4/Server`` or ``cd /opt/Code/Pi5/Server-pi5``
 
 .. image:: ./img/3/path.png
 

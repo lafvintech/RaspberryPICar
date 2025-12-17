@@ -16,37 +16,37 @@ the buttons will light up, and the Raspberry Pi and OLED display will also light
 up. Wait for a while, and the screen will display the IP address, followed by a 
 beep from the car's buzzer.
 
-Step 1
-------
+Step 1 Download VNC Software
+------------------------------
 You need to download and install the  `VNC viewer <https://www.realvnc.com/en/connect/download/viewer/>`_ on personal computer. After the 
 installation is done, open it.
 
-Step 2
-------
+Step 2 Create new connection
+------------------------------------
 Then select “New connection”.
 
 .. image:: ./img/RemoteDesktop_5.png
 
-Step 3
-------
+Step 3 Fill in the ip and name of the raspberry pi
+------------------------------------------------------
 Input IP address of Raspberry Pi and any Name.The IP here is from the car OLED
 
 .. image:: ./img/RemoteDesktop_6.png
 
-Step 4
-------
+Step 4 Double-click to enter the Raspberry Pi GUI
+-----------------------------------------------------
 Double click the connection just created:
 
 .. image:: ./img/RemoteDesktop_9.png
 
-Step 5
-------
+Step 5 Enter verification information
+-----------------------------------------
 Enter Username (pi) and Password(admin).
 
 .. image:: ./img/RemoteDesktop_7.png
 
-Step 6 
-------
+Step 6 Raspberry Pi Desktop
+------------------------------------
 Now you can see the desktop of the Raspberry Pi
 
 .. image:: ./img/desktop1.png
@@ -56,18 +56,24 @@ Now you can see the desktop of the Raspberry Pi
 
 At this point, we have successfully entered the Raspberry Pi system.
 
+.. _test_Subroutine:
+
+Test Subroutine
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 If you need to run the car's individual programs, you still need to follow these steps:
 
-Open the terminal
+你能在桌面上找到stop-server.sh这个文件
 
-.. image:: ./img/终端.png
+.. image:: img/desktop2.png
 
-Type in: ``sudo systemctl stop main-server.service`` to temporarily disable the 
-main program.
+你只需要双击它然后在弹出的窗口中选择 ``Excute in Terminal``,等待一会就会有提示 ``Service stopped successfully``
 
-.. image:: ./img/trunoff_main-server.png
+.. image:: img/execute_file.png
 
-Then you can navigate to the folder ``/home/pi/Code/Pi4/Server/`` to find all the 
+.. image:: img/server_stopped.png
+
+Then you can navigate to the folder ``cd /opt/Code/Pi4/Server`` or ``cd /opt/Code/Pi5/Server-pi5`` to find all the 
 car's files, where you can run individual programs.
 
 If you have finished testing and want to run the main program again, you can 
