@@ -63,11 +63,11 @@ Test Subroutine
 
 If you need to run the car's individual programs, you still need to follow these steps:
 
-你能在桌面上找到stop-server.sh这个文件
+You can find the file stop-server.sh on your desktop
 
 .. image:: img/desktop2.png
 
-你只需要双击它然后在弹出的窗口中选择 ``Excute in Terminal``,等待一会就会有提示 ``Service stopped successfully``
+All you have to do is double-click on it and select ``Excute in Terminal`` in the pop-up window, wait for a while and you'll get the message ``Service stopped successfully``.
 
 .. image:: img/execute_file.png
 
