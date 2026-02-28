@@ -28,7 +28,7 @@ car, transmits video streams, and sends commands to control the Smart car.
 
 .. image:: ./img/0/APP_Support.png
 
-* :download:`Android <https://github.com/lafvintech/RaspberryPICar/releases/download/v1.0.0/RaspPICar.apk>`
+* :download:`Android <https://github.com/lafvintech/RaspberryPICar/releases/download/V1.0.0/RaspPICar.apk>`
 * :download:`Windows <https://www.dropbox.com/scl/fo/o1rbv33e6cm72bizreh8v/ALHQdUU-NBrsDn_AbMX1VxI?rlkey=0fyzzuwurngelni7mpqjmjrqh&st=ghp7r003&dl=1>`
 * :download:`IOS   <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=iphone>`
 * :download:`Macos <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=mac>`
