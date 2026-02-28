@@ -33,6 +33,8 @@ car, transmits video streams, and sends commands to control the Smart car.
 * :download:`IOS   <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=iphone>`
 * :download:`Macos <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=mac>`
 
+You can use the QR code scanning feature in Edge or Chrome to scan, download, and install.
+
 .. figure:: img/Android_app.png
    :align: left
    :name: android-app
@@ -44,7 +46,4 @@ car, transmits video streams, and sends commands to control the Smart car.
    :name: ios-app
 
    iOS App
-
----------------------------------------------------------------------------------------------
-
-You can use the QR code scanning feature in Edge or Chrome to scan, download, and install.
+   
