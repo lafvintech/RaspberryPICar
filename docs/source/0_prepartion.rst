@@ -26,6 +26,8 @@ video, which can be viewed in the following chapter.
 Next we installed our platform client, which communicates with our Raspberry PI 
 car, transmits video streams, and sends commands to control the Smart car.
 
+You can use the QR code scanning feature in Edge or Chrome to scan, download, and install.
+
 .. image:: ./img/0/APP_Support.png
 
 * :download:`Android <https://github.com/lafvintech/RaspberryPICar/releases/download/V1.0.0/RaspPICar.apk>`
@@ -33,7 +35,7 @@ car, transmits video streams, and sends commands to control the Smart car.
 * :download:`IOS   <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=iphone>`
 * :download:`Macos <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=mac>`
 
-You can use the QR code scanning feature in Edge or Chrome to scan, download, and install.
+
 
 .. figure:: img/Android_app.png
    :align: left
@@ -46,4 +48,3 @@ You can use the QR code scanning feature in Edge or Chrome to scan, download, an
    :name: ios-app
 
    iOS App
-   
