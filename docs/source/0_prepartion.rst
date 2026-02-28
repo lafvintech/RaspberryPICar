@@ -45,5 +45,6 @@ car, transmits video streams, and sends commands to control the Smart car.
 
    iOS App
 
+---------------------------------------------------------------------------------------------
 
 You can use the QR code scanning feature in Edge or Chrome to scan, download, and install.
