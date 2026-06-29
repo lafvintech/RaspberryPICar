@@ -10,6 +10,8 @@ Raspberry Pi have developed a graphical SD card writing tool that works on Mac O
 
 You can download the Raspberry Pi Imager tool for your platform via the links below:
 
+Please note that the installation package you downloaded is version 1.8.5.
+
 * :download:`Windows version <https://github.com/raspberrypi/rpi-imager/releases/download/v1.8.5/imager-1.8.5.exe>`
 * :download:`Mac version <https://github.com/raspberrypi/rpi-imager/releases/download/v1.8.5/Raspberry.Pi.Imager.1.8.5.dmg>`
 * :download:`Ubuntu version <https://github.com/raspberrypi/rpi-imager/releases/download/v1.8.5/rpi-imager_1.8.5_amd64.deb>`
@@ -81,14 +83,14 @@ Press **Ctrl+Shift+X** or click the **setting** icon to open the **Advanced opti
 
 Then scroll down to complete the wifi configuration and click **SAVE**.
 
-**Step 6**
+**Step 6 Confirm Custom Settings**
 --------------------------------------
 
 When asked "Would you like to apply OS customisation settings?", press "YES".
 
 .. image:: ./img/1/image17.png
 
-**Step 7**
+**Step 7 Final Confirmation**
 --------------------------------------
 
 If your SD card currently has any files on it, you may wish to back up these files first to prevent you from permanently losing them. If there is no file to be backed up, click **Yes**.

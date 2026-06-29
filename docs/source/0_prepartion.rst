@@ -35,8 +35,6 @@ You can use the QR code scanning feature in Edge or Chrome to scan, download, an
 * :download:`IOS   <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=iphone>`
 * :download:`Macos <https://apps.apple.com/us/app/rasppicar/id6738298527?platform=mac>`
 
-
-
 .. figure:: img/Android_app.png
    :align: left
    :name: android-app
